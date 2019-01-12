@@ -12,4 +12,4 @@ example/
 *.ntvs*
 *.njsproj
 *.sln
-index.html
+./index.html
