@@ -1,6 +1,5 @@
 .cache
 .DS_Store
-.cache
 node_modules/
 dist/
 example/
@@ -12,4 +11,4 @@ example/
 *.ntvs*
 *.njsproj
 *.sln
-./index.html
+/index.html
