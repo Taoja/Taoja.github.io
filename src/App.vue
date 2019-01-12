@@ -40,12 +40,12 @@ export default {
         {
           type: 'link',
           name: 'buttons',
-          url: '/#/base/home/index'
+          url: '#/base/home/index'
         },
         {
           type: 'link',
           name: 'cell',
-          url: '/#/base/init/index'
+          url: '#/base/init/index'
         }
       ]
     }
