@@ -32,5 +32,8 @@
     "vue-md-loader": "^1.1.0",
     "vue-style-loader": "^4.1.1",
     "vue-template-compiler": "^2.5.16"
+  },
+  "dependencies": {
+    "vuti": "^1.0.1"
   }
 }

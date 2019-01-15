@@ -53,7 +53,7 @@ const config = {
     ],
     loader: [
       {
-        test: /\.(jpg|png|svg|gif|jpeg|woff2|woff|eot|ttf|tof|svg)$/,
+        test: /\.(jpg|png|svg|gif|jpeg|woff2|woff|eot|ttf|tof|svg|.vue)$/,
         use: [
           {
             loader: 'url-loader', //url解析器

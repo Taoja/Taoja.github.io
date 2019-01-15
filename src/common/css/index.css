@@ -1,0 +1,15 @@
+.card{
+  margin: 16px 16px 0 0;
+  padding: 16px;
+  border-radius: 4px;
+  width: 150px;
+  display: inline-block;
+}
+.card>div:first-child{
+  font-size: 14px;
+  color: white;
+}
+.card>div:last-child{
+  color: #eee;
+  font-size: 12px;
+}

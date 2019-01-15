@@ -2,18 +2,42 @@ import splitter from 'dividing/bin/splitter'
 
 var routes = [{
     path: '/',
-    redirect: '/base/home/index'
+    redirect: '/unit'
   },{
-    path: '/base/home/index',
-    name: '/base/home/index',
+    path: '/unit',
+    name: 'unit',
     component: () => {
-      return splitter('base/home/index')
+      return splitter('base/base/unit')
     }
   },{
-    path: '/base/init/index',
-    name: '/base/init/index',
+    path: '/color',
+    name: 'color',
     component: () => {
-      return splitter('base/init/index')
+      return splitter('base/base/color')
+    }
+  },{
+    path: '/block',
+    name: 'block',
+    component: () => {
+      return splitter('base/operate/block')
+    }
+  },{
+    path: '/button',
+    name: 'button',
+    component: () => {
+      return splitter('base/operate/button')
+    }
+  },{
+    path: '/popup',
+    name: 'popup',
+    component: () => {
+      return splitter('base/operate/popup')
+    }
+  },{
+    path: '/dialog',
+    name: 'dialog',
+    component: () => {
+      return splitter('base/operate/dialog')
     }
   }
 ]

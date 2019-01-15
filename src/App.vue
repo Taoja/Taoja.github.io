@@ -10,17 +10,18 @@
         <div>Languages</div>
         <div>GitHub</div>
       </div>
+      <div class="loadbar" v-if="loadWidth" :style="{width: loadWidth+'%'}"></div>
     </div>
     <div class="down">
       <div class="left" :class="{'sideBarAct': openSideBar}">
         <ul class="slideBar">
           <li v-for="(item, index) in sidebar" :key="index">
             <p v-if="item.type === 'head'" class="sidebar-heading">{{item.name}}</p>
-            <a @click="sidebarclick = index;openSideBar = false;" :class="{'active': sidebarclick === index}" v-else class="slide-link" :href="item.url">{{item.name}}</a>
+            <a @click="openSideBar = false;" :class="{'active': $route.name === item.id}" v-else class="slide-link" :href="item.url">{{item.name}}</a>
           </li>
         </ul>
       </div>
-      <div class="body">
+      <div class="body output_wrapper">
         <router-view></router-view>
       </div>
     </div>
@@ -30,26 +31,70 @@
 export default {
   data () {
     return {
+      loadWidth: 0,
+      loading: false,
+      loadSrc: require('../node_modules/vuti/common/svg/fire.svg'),
       openSideBar: false,
-      sidebarclick: 1,
       sidebar: [
         {
           type: 'head',
-          name: 'base'
+          name: '指南'
         },
         {
           type: 'link',
-          name: 'buttons',
-          url: '#/base/home/index'
+          id: 'unit',
+          name: '单位与变量',
+          url: '#/unit'
         },
         {
           type: 'link',
-          name: 'cell',
-          url: '#/base/init/index'
+          id: 'color',
+          name: '颜色',
+          url: '#/color'
+        },
+        {
+          type: 'head',
+          name: '操作'
+        },
+        {
+          type: 'link',
+          id: 'block',
+          name: '块-block',
+          url: '#/block'
+        },
+        {
+          type: 'link',
+          id: 'button',
+          name: '按钮-button',
+          url: '#/button'
+        },{
+          type: 'link',
+          id: 'popup',
+          name: '底部弹窗-popup',
+          url: '#/popup'
+        },{
+          type: 'link',
+          id: 'dialog',
+          name: '对话框-dialog',
+          url: '#/dialog'
         }
       ]
     }
   },
+  mounted() {
+    this.$router.beforeEach((to, from, next) => {
+      this.loadWidth = 80
+      this.loading = true
+      next()
+    })
+    this.$router.afterEach((to, from) => {
+      this.loadWidth = 100
+      this.loading = false
+      this.$nextTick(() => {
+        this.loadWidth = 0
+      })
+    })
+  }
 }
 </script>
 
@@ -79,6 +124,15 @@ export default {
     background-color: #fff;
     box-sizing: border-box;
     border-bottom: 1px solid #eaecef;
+    position: relative;
+    >.loadbar{
+      position: absolute;
+      bottom: 0px;
+      height: 1px;
+      left: 0px;
+      background-color: var(--color-t1);
+      transition: all .2s;
+    }
     >.left{
       font-size: 1.3rem;
       font-weight: 600;
@@ -146,8 +200,8 @@ export default {
         }
         .active {
           font-weight: 600;
-          color: #3eaf7c;
-          border-left-color: #3eaf7c;
+          color: var(--color-t1);
+          border-left-color: var(--color-t1);
         }
       }
     }

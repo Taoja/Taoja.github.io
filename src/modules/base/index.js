@@ -1,8 +1,12 @@
 module.exports = {
-  home: {
-    index: {}
+  base: {
+    unit: {},
+    color: {}
   },
-  init: {
-    index: {}
+  operate: {
+    block: {},
+    button: {},
+    popup: {},
+    dialog: {}
   }
 }
