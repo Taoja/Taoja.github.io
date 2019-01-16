@@ -117,7 +117,7 @@
     cursor: normal;
   }
 </style>
-<!-- scroll-demo-2.vue -->
+<!-- scroll-demo-3.vue -->
 ```
 
 ## 参数
