@@ -43,13 +43,13 @@ export default {
         {
           type: 'link',
           id: 'unit',
-          name: '单位与变量',
+          name: '单位与变量 - unit@var',
           url: '#/unit'
         },
         {
           type: 'link',
           id: 'color',
-          name: '颜色',
+          name: '颜色 - color',
           url: '#/color'
         },
         {
@@ -59,24 +59,34 @@ export default {
         {
           type: 'link',
           id: 'block',
-          name: '块-block',
+          name: '块 - block',
           url: '#/block'
         },
         {
           type: 'link',
           id: 'button',
-          name: '按钮-button',
+          name: '按钮 - button',
           url: '#/button'
         },{
           type: 'link',
           id: 'popup',
-          name: '底部弹窗-popup',
+          name: '底部弹窗 - popup',
           url: '#/popup'
         },{
           type: 'link',
           id: 'dialog',
-          name: '对话框-dialog',
+          name: '对话框 - dialog',
           url: '#/dialog'
+        },{
+          type: 'link',
+          id: 'toast',
+          name: '提示框 - toast',
+          url: '#/toast'
+        },{
+          type: 'link',
+          id: 'picker',
+          name: '选择器 - picker',
+          url: '#/picker'
         }
       ]
     }

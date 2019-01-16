@@ -39,6 +39,18 @@ var routes = [{
     component: () => {
       return splitter('base/operate/dialog')
     }
+  },{
+    path: '/toast',
+    name: 'toast',
+    component: () => {
+      return splitter('base/operate/toast')
+    }
+  },{
+    path: '/picker',
+    name: 'picker',
+    component: () => {
+      return splitter('base/operate/picker')
+    }
   }
 ]
 

@@ -7,6 +7,8 @@ module.exports = {
     block: {},
     button: {},
     popup: {},
-    dialog: {}
+    dialog: {},
+    toast: {},
+    picker: {}
   }
 }
