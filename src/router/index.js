@@ -16,10 +16,10 @@ var routes = [{
       return splitter('base/base/color')
     }
   },{
-    path: '/block',
-    name: 'block',
+    path: '/sort',
+    name: 'sort',
     component: () => {
-      return splitter('base/operate/block')
+      return splitter('base/operate/sort')
     }
   },{
     path: '/button',

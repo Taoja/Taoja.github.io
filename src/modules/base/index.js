@@ -4,7 +4,7 @@ module.exports = {
     color: {}
   },
   operate: {
-    block: {},
+    sort: {},
     button: {},
     popup: {},
     dialog: {},

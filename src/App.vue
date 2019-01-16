@@ -84,12 +84,12 @@ export default {
           type: 'head',
           name: '操作 - operate'
         },
-        // {
-        //   type: 'link',
-        //   id: 'block',
-        //   name: '块 - block',
-        //   url: '#/block'
-        // },
+        {
+          type: 'link',
+          id: 'sort',
+          name: '托拉拽 - sort',
+          url: '#/sort'
+        },
         {
           type: 'link',
           id: 'button',
