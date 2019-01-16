@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div class="Tnavbar">
-      <div class="navbarIcon iconfont icon-icon_list" @click="openSideBar = !openSideBar"></div>
+      <div class="navbarIcon" @click="openSideBar = !openSideBar">
+        <img src="@a/-s-menu.png"/>
+      </div>
       <div class="left">Vuti-UI</div>
       <div class="right">
         <div @click="demo">Live Demo</div>
@@ -201,6 +203,11 @@ export default {
 .navbarIcon{
   display: none;
   font-size: 1.2rem;
+      display: flex;
+    align-items: center;
+    >img{
+      width: 20px;
+    }
   @media screen and (max-width: 720px) {
     display: block;
   }
@@ -262,6 +269,7 @@ export default {
       top: 0px;
       left: 0px;
       height: 100%;
+      z-index: 999;
       @media screen and (max-width: 1080px) {
         width: 14rem;
       }
