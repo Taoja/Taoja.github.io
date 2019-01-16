@@ -4,11 +4,9 @@
       <div class="navbarIcon iconfont icon-icon_list" @click="openSideBar = !openSideBar"></div>
       <div class="left">Vuti-UI</div>
       <div class="right">
-        <div>Guide</div>
-        <div>API Reference</div>
-        <div>Release Notes</div>
-        <div>Languages</div>
-        <div>GitHub</div>
+        <div @click="demo">Live Demo</div>
+        <div @click="issures">Issures</div>
+        <div @click="github">GitHub</div>
       </div>
       <div class="loadbar" v-if="loadWidth" :style="{width: loadWidth+'%'}"></div>
     </div>
@@ -54,14 +52,42 @@ export default {
         },
         {
           type: 'head',
-          name: '操作'
+          name: '视图 - view'
         },
         {
           type: 'link',
-          id: 'block',
-          name: '块 - block',
-          url: '#/block'
+          id: 'cell',
+          name: '块 - cell',
+          url: '#/cell'
         },
+        {
+          type: 'link',
+          id: 'cellInput',
+          name: '输入框 - cellInput',
+          url: '#/cellInput'
+        },
+        {
+          type: 'link',
+          id: 'switch',
+          name: '开关 - switch',
+          url: '#/switch'
+        },
+        {
+          type: 'link',
+          id: 'group',
+          name: '组 - group',
+          url: '#/group'
+        },
+        {
+          type: 'head',
+          name: '操作 - operate'
+        },
+        // {
+        //   type: 'link',
+        //   id: 'block',
+        //   name: '块 - block',
+        //   url: '#/block'
+        // },
         {
           type: 'link',
           id: 'button',
@@ -108,7 +134,7 @@ export default {
         },
         {
           type: 'head',
-          name: '子栏位'
+          name: '子栏位 - grid'
         },
         {
           type: 'link',
@@ -135,6 +161,17 @@ export default {
           url: '#/row'
         },
       ]
+    }
+  },
+  methods: {
+    github() {
+      window.open('https://github.com/Taoja/vuti')
+    },
+    issures() {
+      window.open('https://github.com/Taoja/vuti/issues')
+    },
+    demo() {
+      window.open('https://github.com/Taoja/vuti')
     }
   },
   mounted() {
@@ -236,7 +273,7 @@ export default {
         transition: .5s all;
         min-width: 14rem;
         .sidebar-heading{
-          color: #999;
+          color: var(--color-t1);
           transition: color .15s ease;
           font-size: 1.1em;
           font-weight: 700;

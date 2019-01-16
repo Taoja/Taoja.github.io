@@ -93,6 +93,42 @@ var routes = [{
     component: () => {
       return splitter('grid/grid/row')
     }
+  },{
+    path: '/cell',
+    name: 'cell',
+    component: () => {
+      return splitter('view/view/cell')
+    }
+  },{
+    path: '/cellInput',
+    name: 'cellInput',
+    component: () => {
+      return splitter('view/view/cellInput')
+    }
+  },{
+    path: '/group',
+    name: 'group',
+    component: () => {
+      return splitter('view/view/group')
+    }
+  },{
+    path: '/switch',
+    name: 'switch',
+    component: () => {
+      return splitter('view/view/switch')
+    }
+  },{
+    path: '/page',
+    name: 'page',
+    component: () => {
+      return splitter('navigate/navigate/page')
+    }
+  },{
+    path: '/header',
+    name: 'header',
+    component: () => {
+      return splitter('navigate/navigate/header')
+    }
   }
 ]
 
