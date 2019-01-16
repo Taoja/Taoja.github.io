@@ -203,8 +203,7 @@ export default {
 .navbarIcon{
   display: none;
   font-size: 1.2rem;
-      display: flex;
-    align-items: center;
+  line-height: 1;
     >img{
       width: 20px;
     }
