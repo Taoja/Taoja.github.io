@@ -28,10 +28,11 @@
 
 ## 其他属性
 + 添加auto-height属性，当值为true时自适应内容高度
++ mask属性控制是否显示背景遮罩，默认显示
 ```html
 <template>
 <example>
-  <t-popup :visibility="open" auto-height>
+  <t-popup :mask="false" :visibility="open" auto-height>
     <p></p>
     <t-button @click="open = false">关闭popup</t-button>
     <p></p>

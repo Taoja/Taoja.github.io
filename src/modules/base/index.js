@@ -9,6 +9,9 @@ module.exports = {
     popup: {},
     dialog: {},
     toast: {},
-    picker: {}
+    picker: {},
+    actionSheet: {},
+    mask: {},
+    scroll: {}
   }
 }

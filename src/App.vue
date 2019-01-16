@@ -87,7 +87,53 @@ export default {
           id: 'picker',
           name: '选择器 - picker',
           url: '#/picker'
-        }
+        },
+        {
+          type: 'link',
+          id: 'actionSheet',
+          name: '动作面板 - actionSheet',
+          url: '#/actionSheet'
+        },
+        {
+          type: 'link',
+          id: 'mask',
+          name: '遮罩 - mask',
+          url: '#/mask'
+        },
+        {
+          type: 'link',
+          id: 'scroll',
+          name: '滚动 - scroll',
+          url: '#/scroll'
+        },
+        {
+          type: 'head',
+          name: '子栏位'
+        },
+        {
+          type: 'link',
+          id: 'grid',
+          name: '宫格 - grid',
+          url: '#/grid'
+        },
+        {
+          type: 'link',
+          id: 'carousel',
+          name: '轮播图 - carousel',
+          url: '#/carousel'
+        },
+        {
+          type: 'link',
+          id: 'notice',
+          name: '公告 - notice',
+          url: '#/notice'
+        },
+        {
+          type: 'link',
+          id: 'row',
+          name: '行 - row',
+          url: '#/row'
+        },
       ]
     }
   },

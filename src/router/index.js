@@ -51,6 +51,48 @@ var routes = [{
     component: () => {
       return splitter('base/operate/picker')
     }
+  },{
+    path: '/actionSheet',
+    name: 'actionSheet',
+    component: () => {
+      return splitter('base/operate/actionSheet')
+    }
+  },{
+    path: '/mask',
+    name: 'mask',
+    component: () => {
+      return splitter('base/operate/mask')
+    }
+  },{
+    path: '/scroll',
+    name: 'scroll',
+    component: () => {
+      return splitter('base/operate/scroll')
+    }
+  },{
+    path: '/grid',
+    name: 'grid',
+    component: () => {
+      return splitter('grid/grid/grid')
+    }
+  },{
+    path: '/carousel',
+    name: 'carousel',
+    component: () => {
+      return splitter('grid/grid/carousel')
+    }
+  },{
+    path: '/notice',
+    name: 'notice',
+    component: () => {
+      return splitter('grid/grid/notice')
+    }
+  },{
+    path: '/row',
+    name: 'row',
+    component: () => {
+      return splitter('grid/grid/row')
+    }
   }
 ]
 
