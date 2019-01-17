@@ -129,6 +129,12 @@ var routes = [{
     component: () => {
       return splitter('navigate/navigate/header')
     }
+  },{
+    path: '/datepicker',
+    name: 'datepicker',
+    component: () => {
+      return splitter('high/high/datepicker')
+    }
   }
 ]
 

@@ -38,6 +38,8 @@ export default {
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
+  color: #666;
+  font-size: 14px;
 }
 .btn:hover{
   opacity: .8;

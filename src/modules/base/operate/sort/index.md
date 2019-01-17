@@ -73,10 +73,52 @@
 </style>
 <!-- sort-demo-2.vue -->
 ```
+
+## 设置拖动手柄
++ handle属性使列表单元中符合选择器的元素成为拖动的手柄，只有按住拖动手柄才能使列表单元进行拖动；
++ delay属性可定义鼠标选中列表单元可以开始拖动的延迟时间
+```html
+<template>
+<example>
+  <t-sort @result="result" :data="data" :delay="0" handle=".icon-menu">
+    <div class="sort2" v-for="(item, index) in data"><span class="icon-menu"></span>item {{item}}</div>
+  </t-sort>
+</example>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        data: [1,2,3,4,5,6]
+      }
+    },
+    methods: {
+      result(e) {
+        console.log(e)
+      }
+    }
+  }
+</script>
+<style>
+  .sort2{
+    padding: 12px 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+  }
+  .icon-menu{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+</style>
+<!-- sort-demo-3.vue -->
+```
+
 ## 参数
   | 参数      | 说明    | 类型      | 可选值       | 默认值   |
   |---------- |-------- |---------- |-------------  |-------- |
   | data     | 原始数组   | Array  |   -   |   -   |
+  | delay     | 长按延迟   | Number  |   -   |   150   |
+  | handle     | 手柄   | String  |   -   |   -   |
 
 ## 事件
   | 参数      | 说明    |

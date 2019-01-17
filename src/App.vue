@@ -4,7 +4,7 @@
       <div class="navbarIcon" @click="openSideBar = !openSideBar">
         <img src="@a/-s-menu.png"/>
       </div>
-      <div class="left">Vuti-UI</div>
+      <div class="left"><img src="@a/logo.svg"/>Vuti-UI</div>
       <div class="right">
         <div @click="demo">Live Demo</div>
         <div @click="issures">Issures</div>
@@ -22,7 +22,9 @@
         </ul>
       </div>
       <div class="body output_wrapper">
-        <router-view></router-view>
+        <div>
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>
@@ -54,7 +56,7 @@ export default {
         },
         {
           type: 'head',
-          name: '视图 - view'
+          name: '视图'
         },
         {
           type: 'link',
@@ -82,7 +84,7 @@ export default {
         },
         {
           type: 'head',
-          name: '操作 - operate'
+          name: '操作'
         },
         {
           type: 'link',
@@ -136,7 +138,7 @@ export default {
         },
         {
           type: 'head',
-          name: '子栏位 - grid'
+          name: '子栏位'
         },
         {
           type: 'link',
@@ -161,6 +163,15 @@ export default {
           id: 'row',
           name: '行 - row',
           url: '#/row'
+        },
+        {
+          type: 'head',
+          name: '高阶组件'
+        },{
+          type: 'link',
+          id: 'datepicker',
+          name: '日期选择器 - datepicker',
+          url: '#/datepicker'
         },
       ]
     }
@@ -224,6 +235,8 @@ export default {
     box-sizing: border-box;
     border-bottom: 1px solid #eaecef;
     position: relative;
+    box-shadow:0px 2px 8px 0px rgba(153,153,153,0.3);
+    z-index: 100;
     >.loadbar{
       position: absolute;
       bottom: 0px;
@@ -237,6 +250,12 @@ export default {
       font-weight: 600;
       color: #2c3e50;
       position: relative;
+      display: flex;
+      align-items: center;
+      >img{
+        width: 30px;
+        margin-right: 15px;
+      }
     }
     >.right{
       display: flex;
@@ -268,7 +287,7 @@ export default {
       top: 0px;
       left: 0px;
       height: 100%;
-      z-index: 999;
+      z-index: 99;
       @media screen and (max-width: 1080px) {
         width: 14rem;
       }
@@ -280,36 +299,34 @@ export default {
         transition: .5s all;
         min-width: 14rem;
         .sidebar-heading{
-          color: var(--color-t1);
+          color: #333;
           transition: color .15s ease;
-          font-size: 1.1em;
+          font-size: 16px;
           font-weight: 700;
-          padding-left: 1.5rem;
-          margin-top: 0;
-          margin-bottom: .5rem;
+          padding-left: 17px;
+          margin-top: 20px;
+          margin-bottom: 20px;
         }
         .slide-link{
           font-weight: 400;
-          display: inline-block;
-          color: #2c3e50;
-          border-left: .25rem solid transparent;
-          padding: .35rem 1rem .35rem 1.25rem;
-          line-height: 1.4;
-          width: 100%;
-          box-sizing: border-box;
+          font-size: 14px;
+          color: #333;
+          padding: 6px 1rem 6px 1.25rem;
+          border-left: 2px solid transparent;
+          display: block;
+          position: relative;
+          margin-left: 17px;
         }
         .active {
-          font-weight: 600;
-          color: var(--color-t1);
-          border-left-color: var(--color-t1);
+          color: #0096FF;
+          border-left-color: #0096FF;
+          background-color: #F1F9FF;
         }
       }
     }
     >.body{
       flex: 1;
-      max-width: 740px;
-      margin: 20px auto;
-      padding: 0px 2rem 0px 18.4rem;
+      padding: 20px 2rem 0px 18.4rem;
       transition: .5s all;
       overflow: auto;
       @media screen and (max-width: 1080px) {

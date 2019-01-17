@@ -75,6 +75,30 @@
 <!-- toast-demo-3.vue -->
 ```
 
+## pulgin用法
++ 可以使用$toast方法调用组件
+```html
+<template>
+<example>
+  <t-button @click="open">pulgin用法</t-button>
+</example>
+</template>
+<script>
+  export default {
+    methods: {
+      open() {
+        this.$toast({
+          text: 'plugin用法',
+          icon: 'icon-QRcode',
+          mask: true
+        })
+      }
+    }
+  } 
+</script>
+<!-- toast-demo-4.vue -->
+```
+
 ## 参数
   | 参数      | 说明    | 类型      | 可选值       | 默认值   |
   |---------- |-------- |---------- |-------------  |-------- |
