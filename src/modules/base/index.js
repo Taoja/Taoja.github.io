@@ -1,7 +1,8 @@
 module.exports = {
   base: {
     unit: {},
-    color: {}
+    color: {},
+    action: {}
   },
   operate: {
     sort: {},

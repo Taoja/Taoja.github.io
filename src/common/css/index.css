@@ -24,3 +24,11 @@ body, html{
   right: 0;
   margin: 0;
 }
+.doclogo{
+  width: 200px;
+  margin: auto;
+}
+.doclogo>img{
+  width: 100%;
+  display:block;
+}

@@ -44,6 +44,12 @@ export default {
         },
         {
           type: 'link',
+          id: 'action',
+          name: '起步 - action',
+          url: '#/action'
+        },
+        {
+          type: 'link',
           id: 'unit',
           name: '单位与变量 - unit@var',
           url: '#/unit'

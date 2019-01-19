@@ -2,7 +2,13 @@ import splitter from 'dividing/bin/splitter'
 
 var routes = [{
     path: '/',
-    redirect: '/unit'
+    redirect: '/action'
+  },{
+    path: '/action',
+    name: 'action',
+    component: () => {
+      return splitter('base/base/action')
+    }
   },{
     path: '/unit',
     name: 'unit',
