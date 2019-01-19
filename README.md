@@ -1,44 +1,37 @@
-# v-turbo
+# Vuti
 
-## 简介
-
-v-turbo基于目前前端社区最新的Vue.js 2.0及webpack 4.0搭建，针对turbo移动开发平台配套的离线更新、前端UI框架及原生Bridge进行了深度集成及优化。
+vuti是一套基于vmin、var、calc等css3新特性的UI框架。通过变量复用、计算属性实现组件变量化。
 
 ## 特点
-+ 多工程化：分包机制让每一个包都有独立的工程环境，让各个包共享同一个资源环境，可独立打包发布，降低发布成本。可独立调试，减少开发成本。
-+ 多环境支持：一套代码，多环境运行。通过配置[环境变量](#webpack配置)实现同一套代码不同环境编译效果，加快版本迭代速度。
-+ 高拓展性：开放plugins、loader配置，可自行拓展脚本及加载器（默认支持vue、sass）
-+ 离线包功能：配合turbo移动开发平台实现字节级的差量更新
++ 高扩展性：通过修改css3全局变量，组件局部变量来达到变更主题风格。
++ 轻量：摒弃通过css扩展语言，组件主体使用标准js写法，减少代码编译成本。
++ 插件化：组件事件、参数上升，注册时可自定义组件事件与参数。
++ 风格统一：组件通过一套规范化、变量化属性组成。
 
-# 目录结构
+# 安装
 
-```JSON
-|-- /
-    |-- .babelrc
-    |-- README.md
-    |-- build
-    |-- index.html
-    |-- package.json
-    |-- webpack.config.js
-    |-- src
-    |   |-- index.js
-    |   |-- assets
-    |   |   |-- image
-    |   |-- common
-    |   |   |-- js
-    |   |   |-- scss
-    |   |-- components
-    |   |   |-- extend
-    |   |   |-- base
-    |   |-- modules
-    |   |   |-- turbo
-    |   |   |   |-- index.js
-    |   |   |   |-- wel
-    |   |   |       |-- come
-    |   |   |           |-- index.vue 
-    |   |   |           |-- index.js 
-    |-- static
-        |-- vue.min.js
+```bash
+$ npm run install vuti --save
+```
+
+在工程入口引入vuti
+```js
+import Vue from 'vue'
+import vuti from 'vuti
+import { plugins } from 'vuti'
+
+/** 
+ * 可使用插件模式调用组件
+ */
+Vue.use(plugins)
+
+/** 
+ * vuti.set设置全局变量
+ */
+vuti.set({
+  '--color-t1': 'red',
+  ...
+})
 ```
 
 ## webpack.config.js
