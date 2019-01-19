@@ -78,6 +78,12 @@ export default {
         },
         {
           type: 'link',
+          id: 'search',
+          name: '搜索栏 - search',
+          url: '#/search'
+        },
+        {
+          type: 'link',
           id: 'group',
           name: '组 - group',
           url: '#/group'
@@ -172,6 +178,16 @@ export default {
           id: 'datepicker',
           name: '日期选择器 - datepicker',
           url: '#/datepicker'
+        },{
+          type: 'link',
+          id: 'gestures',
+          name: '手势解锁 - gestures',
+          url: '#/gestures'
+        },{
+          type: 'link',
+          id: 'keyboard',
+          name: 'h5键盘 - keyboard',
+          url: '#/keyboard'
         },
       ]
     }

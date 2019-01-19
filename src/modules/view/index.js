@@ -3,6 +3,7 @@ module.exports = {
     cell: {},
     cellInput: {},
     group: {},
-    switch: {}
+    switch: {},
+    search: {}
   }
 }

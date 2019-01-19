@@ -118,6 +118,12 @@ var routes = [{
       return splitter('view/view/switch')
     }
   },{
+    path: '/search',
+    name: 'search',
+    component: () => {
+      return splitter('view/view/search')
+    }
+  },{
     path: '/page',
     name: 'page',
     component: () => {
@@ -134,6 +140,18 @@ var routes = [{
     name: 'datepicker',
     component: () => {
       return splitter('high/high/datepicker')
+    }
+  },{
+    path: '/gestures',
+    name: 'gestures',
+    component: () => {
+      return splitter('high/high/gestures')
+    }
+  },{
+    path: '/keyboard',
+    name: 'keyboard',
+    component: () => {
+      return splitter('high/high/keyboard')
     }
   }
 ]
