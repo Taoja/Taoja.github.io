@@ -31,11 +31,11 @@ sort是一个基于[sortable](https://github.com/SortableJS/Sortable)的组件�
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: var(--color-t1);
     text-align: center;
     line-height: 100px;
     color: white;
-    border: 1px solid yellow;
+    border: 1px solid var(--color-divide);
   }
 </style>
 <!-- sort-demo-1.vue -->
