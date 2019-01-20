@@ -11,6 +11,5 @@ jobs:
         provider: pages
         skip_cleanup: true
         github-token: "$github_TOKEN"
-        local-dir: /
         on:
           branch: master
