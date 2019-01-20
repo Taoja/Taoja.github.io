@@ -1,6 +1,6 @@
 {
   "name": "vue-split",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "单页面分包工程",
   "scripts": {
     "build": "node node_modules/dividing single",
