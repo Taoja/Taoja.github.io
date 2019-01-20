@@ -8,8 +8,12 @@ jobs:
   include:
     - stage: github release
       deploy:
+        script:
+          - cd dist
+          - ls
         provider: pages
         skip_cleanup: true
         github-token: "$github_TOKEN"
+        local-dir: /vuti
         on:
           branch: master
