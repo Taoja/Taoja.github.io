@@ -9,7 +9,7 @@ jobs:
     - stage: github release
       deploy:
         script:
-          - cd dist
+          - cd vuti
           - ls
         provider: pages
         skip_cleanup: true
