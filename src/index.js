@@ -5,9 +5,7 @@ import VueRouter from 'vue-router'
 import routes from './router'
 import stores from './store'
 import '@/common/css/index.css'
-import a from 'vuti'
-console.log(a)
-import {plugins, tButton, tPopup, tDialog, tToast, tPicker, tGrid, tCarousel, tNotice, tRow, tActionsheet, tMask, tScroll, tCell, tCellInput, tSwitch, tGroup, tPage, tHeader, tSort, tDatepicker, tGestures, tKeyboard, tSearch} from 'vuti'
+import {plugins, tButton, tPopup, tDialog, tToast, tPicker, tGrid, tCarousel, tNotice, tRow, tActionsheet, tMask, tScroll, tCell, tCellInput, tSwitch, tGroup, tPage, tHeader, tSort, tDatepicker, tGestures, tKeyboard, tSearch} from 'vuti/src/index'
 import example from '@/components/window.vue'
 Vue.component('tButton', tButton)
 Vue.component('tPopup', tPopup)
