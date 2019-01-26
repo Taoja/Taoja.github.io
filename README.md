@@ -1,5 +1,5 @@
 <p align="center">
-  <img width=200 src="@a/logo.png">
+  <img width=200 src="./src/assets/logo.png">
 </p>
 <p align="center">
   <a href="https://travis-ci.org/Taoja/vuti"><img src="https://travis-ci.org/Taoja/vuti.svg?branch=master" alt="autobuild"></a>
