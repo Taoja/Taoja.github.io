@@ -194,6 +194,11 @@ export default {
           id: 'keyboard',
           name: 'h5键盘 - keyboard',
           url: '#/keyboard'
+        },{
+          type: 'link',
+          id: 'date',
+          name: '日历 - date',
+          url: '#/date'
         },
       ]
     }

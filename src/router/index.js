@@ -159,6 +159,12 @@ var routes = [{
     component: () => {
       return splitter('high/high/keyboard')
     }
+  },{
+    path: '/date',
+    name: 'date',
+    component: () => {
+      return splitter('high/high/date')
+    }
   }
 ]
 
